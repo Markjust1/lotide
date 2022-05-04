@@ -1,4 +1,4 @@
-function eqArrays(a, b) {
+const eqArrays = function(a, b) {
   if (JSON.stringify(a) === JSON.stringify(b)) {
     return true;
   } else {
@@ -6,7 +6,7 @@ function eqArrays(a, b) {
   }
 }
 
-function assertArraysEqual(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1) === eqArrays(arr2)) {
     return true;
   } else {
@@ -14,7 +14,7 @@ function assertArraysEqual(arr1, arr2) {
   }
 }
 
-function without(source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   const array = [];
   for (let y = 0; y < source.length; y++) {
     let removeThisSource = false;
@@ -28,6 +28,6 @@ function without(source, itemsToRemove) {
     }
   }
   return array;
-}
+};
 console.log(without([1, 2, 3], [1, 2]));
 console.log(without(["1", "2", "3"], [1, 2, "3"])); 
