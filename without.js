@@ -5,11 +5,15 @@ function eqArrays(a, b) {
     return false;
   }
 }
+
 function assertArraysEqual(arr1, arr2) {
   if (eqArrays(arr1) === eqArrays(arr2)) {
     return true;
-  } 
+  } else {
+    return false;
+  }
 }
+
 function without(source, itemsToRemove) {
   const array = [];
   for (let y = 0; y < source.length; y++) {
