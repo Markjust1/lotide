@@ -21,4 +21,4 @@ const ab = { a: '1', b: '2'};
 const ba = { a: '1', b: '2'};
 const abc = { a: '1', b: '2', c: '3'};
 
-console.log(assertObjectsEqual(eqObjects(ab, ba), eqObjects(ab, ba)));
+console.log(assertObjectsEqual(eqObjects(ab, ba), true));
