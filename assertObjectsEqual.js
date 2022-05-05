@@ -11,9 +11,9 @@ const eqObjects = function(object1, object2) {
 
 const assertObjectsEqual = function(actual, expected) {
   if (actual === expected) {
-    return true;
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    return false;
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
