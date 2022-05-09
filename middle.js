@@ -4,7 +4,7 @@ const eqArrays = require('./eqArrays');
 const middle = function(array) {
   let valueHolder = [];
   let output = 0;
-  // Check if array length is smaller than 2;
+  // Check if array length is smaller than 2; => return empty array
   if (array.length <= 2) {
     return valueHolder;
   // Check if array.length is bigger than 2;
@@ -13,13 +13,25 @@ const middle = function(array) {
     if (array.length % 2 !== 0) {
       // Odd case
       output = parseInt(array.length / 2) + 1;
-      valueHolder.push(output);
+      for (let i = 0; i < array.length; i++) {
+        if (i === output) {
+          valueHolder.push(array[i] + 1);
+        }
+      }
       return valueHolder;
     } else if (array.length % 2 === 0) {
       // Even case
       output = parseInt(array.length / 2);
-      valueHolder.push(output);
-      valueHolder.push(output + 1);
+      for (let i = 0; i < array.length; i++) {
+        if (i === output) {
+          // getting indexes of central items in array
+          let num1 = array.indexOf(array[i] - 1);
+          let num2 = array.indexOf(array[i]);
+          // adding actual values to new array
+          valueHolder.push(array[num1]);
+          valueHolder.push(array[num2]);
+        }
+      }
       return valueHolder;
     }
   }
