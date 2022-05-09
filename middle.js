@@ -12,10 +12,11 @@ const middle = function(array) {
     // Checking if array length is odd or even;
     if (array.length % 2 !== 0) {
       // Odd case
-      output = parseInt(array.length / 2) + 1;
+      output = parseInt(array.length / 2);
       for (let i = 0; i < array.length; i++) {
         if (i === output) {
-          valueHolder.push(array[i] + 1);
+          let num = array.indexOf(array[i])
+          valueHolder.push(array[num]);
         }
       }
       return valueHolder;
@@ -25,7 +26,7 @@ const middle = function(array) {
       for (let i = 0; i < array.length; i++) {
         if (i === output) {
           // getting indexes of central items in array
-          let num1 = array.indexOf(array[i] - 1);
+          let num1 = array.indexOf(array[i-1]);
           let num2 = array.indexOf(array[i]);
           // adding actual values to new array
           valueHolder.push(array[num1]);
