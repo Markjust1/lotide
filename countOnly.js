@@ -19,6 +19,7 @@ const firstNames = [
   "Joe"
 ];
 
+// Counts the number of item occurences in an array
 const countOnly = function(allItems, itemsToCount) {
   const results = {}
   for (const item of allItems) {
@@ -32,6 +33,9 @@ const countOnly = function(allItems, itemsToCount) {
   }
   return results;
 }
+
+module.exports = countOnly;
+
 // itemsToCount: an object specifying what to count
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 

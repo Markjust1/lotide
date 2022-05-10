@@ -13,7 +13,7 @@ const assertArraysEqual = function(arr1, arr2) {
     return false;
   }
 }
-
+// Checks two array and returns any difference
 const without = function(source, itemsToRemove) {
   const array = [];
   for (let y = 0; y < source.length; y++) {
@@ -29,5 +29,8 @@ const without = function(source, itemsToRemove) {
   }
   return array;
 };
+
+module.exports = without;
+
 console.log(without([1, 2, 3], [1, 2]));
 console.log(without(["1", "2", "3"], [1, 2, "3"])); 

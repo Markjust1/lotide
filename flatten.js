@@ -14,6 +14,7 @@ function eqArrays(a, b) {
   }
 }
 
+// Removes any sub-arrays in the array
 function flatten(elem) {
   let output = [];
   for (item of elem) {
@@ -27,5 +28,7 @@ function flatten(elem) {
   }
   return output;
 }
+
+module.exports = flatten;
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));

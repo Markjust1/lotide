@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// Counts how many times each letter appers in a array
 const countLetters = function(elem) {
   let result = {};
   for (let item of elem) {
@@ -19,5 +20,7 @@ const countLetters = function(elem) {
   }
   return result;
 };
+
+module.exports = countLetters;
 
 console.log(countLetters('This is sparta'));
