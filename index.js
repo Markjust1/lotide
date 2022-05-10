@@ -13,19 +13,22 @@ const eqArrays = require('./eqArrays.js');
 const countOnly = require('./countOnly.js');
 const countLetters = require('./countLetters.js');
 
-module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  map: map,
-  without: without,
-  takeUntil: takeUntil,
-  letterPositions: letterPositions,
-  flatten: flatten,
-  findKeyByValue: findKeyByValue,
-  findKey: findKey,
-  eqObjects: eqObjects,
-  eqArrays: eqArrays,
-  countOnly: countOnly,
-  countLetters: countLetters
-};
+module.exports = {head, tail, middle, map, without, takeUntil, letterPositions, flatten, findKeyByValue, findKey, eqObjects, eqArrays, countOnly, countLetters};
+
+//BACKUP
+// module.exports = {
+//   head: head,
+//   tail: tail,
+//   middle: middle,
+//   map: map,
+//   without: without,
+//   takeUntil: takeUntil,
+//   letterPositions: letterPositions,
+//   flatten: flatten,
+//   findKeyByValue: findKeyByValue,
+//   findKey: findKey,
+//   eqObjects: eqObjects,
+//   eqArrays: eqArrays,
+//   countOnly: countOnly,
+//   countLetters: countLetters
+// };
